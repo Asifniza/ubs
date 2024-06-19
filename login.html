@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function log(){
+            let a=document.getElementById("t1").value;
+            let b=document.getElementById("t2").value;
+            if(a=="asif"&&b=="123")
+            {
+                alert("login successfully")
+            }
+            else if(a!="asif"&&b=="123")
+            {
+                alert("invalid ")
+            }
+            else if(a=="asif"&&b!="123")
+            {
+                alert("invalid")
+            }
+            else{
+                alert("invalid")
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <div>
+            <center>
+               username:<input type="text" id="t1"><br><br>
+               password:<input type="text" id="t2"><br><br>
+               <input type="button" onclick="log()"value='login'
+            </center>
+        </div>
+    </form>
+    
+</body>
+</html>
